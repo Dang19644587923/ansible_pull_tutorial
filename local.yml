@@ -5,7 +5,7 @@
           - name: update repository
             dnf:
                     update_cache: yes
-            when_change: false
+            changed_when: false
 
   tasks:
           - include: tasks/users.yml
