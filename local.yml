@@ -8,6 +8,6 @@
             changed_when: false
 
   tasks:
-          - include: tasks/users.yml
+          - include: tasks/user.yml
           - include: tasks/package.yml
           - include: tasks/cron.yml
