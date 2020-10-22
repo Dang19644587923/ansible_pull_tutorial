@@ -9,5 +9,5 @@
 
   tasks:
           - include: tasks/user.yml
-          - include: tasks/package.yml
+          - include: tasks/packages.yml
           - include: tasks/cron.yml
