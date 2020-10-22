@@ -1,0 +1,5 @@
+- name: install htop
+  dnf:
+          name:
+                  - htop
+                  - tmux

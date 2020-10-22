@@ -1,10 +1,11 @@
 - hosts: localhost
   connection: local
   become: true
+  pre-tasks:
+          - name: update repository
+            dnf:
+                    update_cache: yes
+            when_change: false
 
   tasks:
-          - name: Install htopp
-            dnf:
-                    name:
-                            - epel-release
-                            - htop
+          - include: tasks/package.yml
